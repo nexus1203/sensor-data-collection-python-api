@@ -25,7 +25,7 @@ class SensorResource:
         pass  # not implemented
 
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     # import the SensorDataCollector we created before
     from sensor import SensorDataCollector
     # Create sensor data collector and start it
