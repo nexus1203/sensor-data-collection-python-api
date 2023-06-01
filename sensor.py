@@ -36,7 +36,7 @@ class SensorDataCollector:
 
     @staticmethod
     def _parse_data(line):
-        parts = line.split('\t')
-        temperature = float(parts[0].split(': ')[1].split(' *C')[0])
-        humidity = float(parts[1].split(': ')[1].split(' %')[0])
+        parts = line.split(",")
+        temperature = float(parts[2].split(": ")[1].strip())
+        humidity = float(parts[1].split(": ")[1].strip())
         return temperature, humidity
